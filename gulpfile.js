@@ -5,7 +5,6 @@ var gulp = require('gulp'),
     less = require('gulp-less')
     path = require('path')
     karma = require('karma').Server
-	jasmine = require('gulp-jasmine');
 
 gulp.task('compress', function() {
   gulp.src('src/*.js')

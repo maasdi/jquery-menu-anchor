@@ -1,13 +1,13 @@
 module.exports = function(config) {
   config.set({
-    frameworks: ['jasmine-jquery', 'jasmine'],
+    frameworks: ['jasmine'],
     reporters: ['spec'],
     browsers: ['PhantomJS'],
     files: [
       'libs/jquery.min.js',
+      'libs/jasmine-jquery.js',
       'src/jquery.menu-anchor.js',
-      'test/**/*.spec.js',
-      { pattern: 'test/**/*.spec.html', served: true, included: false},
+      'test/**/*.spec.js'
     ]
   });
 };
