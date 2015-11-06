@@ -36,5 +36,5 @@ gulp.task('test', function (done) {
 });
 
 gulp.task('default', function() {
-        gulp.start('jslint', 'compress', 'less');
+        gulp.start('jslint', 'test', 'compress', 'less');
 });

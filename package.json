@@ -1,9 +1,15 @@
 {
-  "name": "jquery.anchor",
-  "description": "jQuery plugin to create anchor as navigation on the page",
+  "name": "jquery.menu-anchor",
+  "description": "jQuery plugin to create menu anchor as navigation on the page",
   "version": "1.0.0",
   "author": "Maas Dianto <maas.dianto@gmail.com>",
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/maasdi/jquery-menu-anchor.git"
+  },
   "keywords": [
+    "jquery-plugin",
+    "menu",
     "anchor",
     "navigation"
   ],
