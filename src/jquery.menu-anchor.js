@@ -27,7 +27,7 @@
 
                     $(self.settings.window.document).find('html, body').animate(
                             {scrollTop: pos.top - 5},
-                    {duration: 'fast',
+                    {duration: 'slow',
                         complete: function() {
                             if (self.settings.scroll)
                                 self.scroll = true;

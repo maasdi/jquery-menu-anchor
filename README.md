@@ -1,4 +1,7 @@
 # jquery-menu-anchor
+
+[![Build Status](https://travis-ci.org/maasdi/jquery-menu-anchor.svg?branch=master)](https://travis-ci.org/maasdi/jquery-menu-anchor)
+
 jQuery plugin to create menu anchor as navigation on the page
 
 ![Menu Anchor View Default](https://raw.githubusercontent.com/maasdi/jquery-menu-anchor/master/demo/sample.png)

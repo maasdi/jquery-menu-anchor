@@ -53,11 +53,11 @@ describe('A jQuery Anchor Plugin Test', function() {
 				expect($('#menu-anchor-css')).not.toHaveClass('selected')
 				done()
 	    	}, 5000)
-		}, 6000);
+		}, 6000)
 
 		afterEach(function(done) {
-	      done();
-	    }, 1000);
-	});
+	      done()
+	    }, 1000)
+	})
 
-});
+})
