@@ -3,7 +3,7 @@
   "description": "jQuery plugin to create menu anchor as navigation on the page",
   "version": "1.0.0",
   "author": "Maas Dianto <maas.dianto@gmail.com>",
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "https://github.com/maasdi/jquery-menu-anchor.git"
   },
@@ -20,6 +20,7 @@
     "gulp-jshint": "^1.12.0",
     "gulp-karma": "0.0.5",
     "gulp-less": "^3.0.3",
+    "gulp-license": "^1.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.4.2",
     "jasmine-core": "^2.3.4",

@@ -5,11 +5,13 @@ var gulp = require('gulp'),
     less = require('gulp-less')
     path = require('path')
     karma = require('karma').Server
+    license = require('gulp-license')
 
 gulp.task('compress', function() {
   gulp.src('src/*.js')
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))
+    .pipe(license('apache', { tiny: false, organization: 'Maas Dianto <maas.dianto@gmail.com>' } ))
     .pipe(gulp.dest('dist'))
 });
 
