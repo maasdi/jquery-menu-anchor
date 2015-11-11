@@ -15,6 +15,11 @@ gulp.task('compress', function() {
     .pipe(gulp.dest('dist'))
 });
 
+gulp.task('copy', function() {
+    gulp.src('src/*.js')
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('jslint', function() {
     return gulp.src(['src/*.js'])
         .pipe(jshint())
@@ -37,5 +42,5 @@ gulp.task('test', function (done) {
 });
 
 gulp.task('default', function() {
-        gulp.start('jslint', 'test', 'compress', 'less');
+        gulp.start('jslint', 'test', 'compress', 'copy', 'less');
 });
