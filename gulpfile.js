@@ -6,17 +6,19 @@ var gulp = require('gulp'),
     path = require('path')
     karma = require('karma').Server
     license = require('gulp-license')
+    author = 'Maas Dianto <maas.dianto@gmail.com>'
 
 gulp.task('compress', function() {
   gulp.src('src/*.js')
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))
-    .pipe(license('apache', { tiny: false, organization: 'Maas Dianto <maas.dianto@gmail.com>' } ))
+    .pipe(license('apache', { tiny: false, organization: author } ))
     .pipe(gulp.dest('dist'))
 });
 
 gulp.task('copy', function() {
     gulp.src('src/*.js')
+    .pipe(license('apache', { tiny: false, organization: author } ))
     .pipe(gulp.dest('dist'));
 });
 
@@ -31,6 +33,7 @@ gulp.task('less', function () {
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
+    .pipe(license('apache', { tiny: false, organization: author } ))
     .pipe(gulp.dest('dist/css'));
 });
 
