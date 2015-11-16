@@ -4,6 +4,8 @@
 
 jQuery plugin to create menu anchor as navigation on the page
 
+![Live Demo](http://maasdi.github.io/jquery-menu-anchor/)
+
 ![Menu Anchor View Default](https://raw.githubusercontent.com/maasdi/jquery-menu-anchor/master/demo/sample.png)
 
 ## Usage
