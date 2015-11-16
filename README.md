@@ -54,4 +54,4 @@ $('#container').MenuAnchor();
 ## Licenses:
 * Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
 
-[demo-url]: http://maasdi.github.io/jquery-menu-anchor/
+[demo-url]: http://maasdi.github.io/jquery-menu-anchor
