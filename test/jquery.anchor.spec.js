@@ -33,17 +33,18 @@ describe('A jQuery Anchor Plugin Test', function() {
 	it('should be init correctly', function() {
 		plugin = $('#container').MenuAnchor()
 		expect(plugin).toBeDefined()
+		// first item will be default as selected
 		expect($('#menu-anchor-css')).toHaveClass('selected')
 	});
 
-	describe('long process DOM change', function() {
+	describe('DOM events change', function() {
 
 		beforeEach(function(done) {
-	      done();
+			plugin = $('#container').MenuAnchor()
+			done();
 	    }, 1000);
 
 		it('should set selected on clicked', function(done) {
-			plugin = $('#container').MenuAnchor()
 			spyEvent = spyOnEvent($('#menu-anchor-database'), 'click')
 			$('#menu-anchor-database').click()
 			expect('click').toHaveBeenTriggeredOn($('#menu-anchor-database'))
@@ -53,6 +54,20 @@ describe('A jQuery Anchor Plugin Test', function() {
 				expect($('#menu-anchor-css')).not.toHaveClass('selected')
 				done()
 	    	}, 5000)
+		}, 6000)
+		
+		it('should keep selected on click current selected item', function(done) {
+			// current selected item
+			expect($('#menu-anchor-css')).toHaveClass('selected')
+			// onclick
+			spyEvent = spyOnEvent($('#menu-anchor-css'), 'click')
+			$('#menu-anchor-css').click()
+			expect('click').toHaveBeenTriggeredOn($('#menu-anchor-css'))
+	    	expect(spyEvent).toHaveBeenTriggered()
+			setTimeout(function() {
+				expect($('#menu-anchor-css')).toHaveClass('selected')
+				done()
+			}, 5000)
 		}, 6000)
 
 		afterEach(function(done) {
